@@ -1,0 +1,227 @@
+:root {
+  --color1: #000000;
+  --color2: #0b192c;
+  --color3: #1e3e62;
+  --color4: #ff6500;
+  --shadow1: #ff660096;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: all 0.1s ease-in-out;
+  list-style: none;
+  text-decoration: none;
+  color: var(--color4);
+}
+body,
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--color1);
+}
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background: var(--color3);
+  position: relative;
+}
+header .logo {
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+header .logo:hover {
+  text-shadow: 0 0 35px var(--color4);
+}
+header .menu {
+  display: none;
+}
+header ul {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+header ul li {
+  width: 90px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+header ul li:last-child {
+  align-self: right;
+}
+header ul li:hover,
+.btn:hover,
+header .menu:hover {
+  background: var(--color2);
+}
+header ul li a {
+  width: 100%;
+  height: 100%;
+  padding: 10px 12px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  background: var(--color4);
+  color: var(--color3);
+}
+header .btn:hover {
+  color: var(--color4);
+}
+section {
+  width: 100%;
+  height: 100vh;
+}
+#home {
+  height: calc(100vh - 100px);
+}
+.banner {
+  width: 100%;
+  height: 100vh;
+  background: var(--color2);
+}
+.banner .imagem {
+  width: 100%;
+  height: 400px;
+}
+.banner .imagem img {
+  width: 100%;
+  height: 100%;
+}
+
+.divisor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40%;
+}
+.divisor ul {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  justify-items: center;
+  padding: 10px;
+
+}
+.divisor ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-size: 45px;
+  height: 100%;
+  transition: 0.3s ease-in-out;
+}
+.divisor ul li ion-icon {
+}
+.divisor ul li:hover ion-icon {
+  transition: all 0.3s ease-in-out;
+  filter: drop-shadow(1px 1px 15px var(--color4));
+}
+#contato {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color3);
+}
+form {
+  max-width: 800px;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+form .form-group {
+  width: 100%;
+  height: fit-content;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+form .form-group label {
+  font-size: 20px;
+}
+form .form-group input {
+  padding: 10px 0 10px 10px;
+  outline: none;
+}
+form .form-group textarea {
+  max-height: 150px;
+  height: 100px;
+  resize: vertical;
+  min-height: 100px;
+  padding: 10px;
+  outline: none;
+}
+form .form-group input,
+form .form-group textarea {
+  border: 2px solid var(--color4);
+  color: var(--color2);
+  margin-top: 5px;
+  border-radius: 4px;
+}
+form .form-group.buttons {
+  align-items: center;
+}
+form .form-group.buttons .btn {
+  position: relative;
+  width: 100px;
+  height: 40px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  right: 0;
+  text-transform: uppercase;
+}
+form .form-group.buttons .btn:hover {
+  color: var(--color4);
+}
+footer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: var(--color2);
+}
+footer .btn {
+  position: absolute;
+  padding: 20px;
+  bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--color2);
+  box-shadow: 0 0 10px var(--shadow1);
+  right: 30px;
+}
+footer .btn:hover{
+  background: var(--color4);
+  
+}
+footer .btn:hover ion-icon{
+  color: var(--color3);
+}
+footer .btn ion-icon{
+  color: var(--color4);
+  font-size: 30px;
+}
