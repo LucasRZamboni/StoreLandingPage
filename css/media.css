@@ -15,7 +15,7 @@
     box-shadow: 0 0 5px var(--shadow1);
     border-radius: 4px;
     height: 0;
-    width: 200px;
+    width: 70%;
     gap: 0;
   }
   header ul li {
@@ -67,6 +67,9 @@
   }
   footer .btn{
     padding: 15px;
+  }
+  form {
+    width: 90%;
   }
 }
 
